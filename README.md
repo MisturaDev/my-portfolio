@@ -1,11 +1,11 @@
 # My Portfolio
 
-Welcome to my personal portfolio. This project showcases my frontend and mobile development skills and React projects.
+Welcome to my personal portfolio, showcasing my frontend and mobile development skills through React projects.
 
 ---
 ## About Me
 
-Hi, I’m **Mistura Ishola**, I’m a frontend developer focused on building clean, responsive and user-friendly applications, while continuously growing in modern web technologies.
+Hi, I’m **Mistura Ishola**, a frontend developer focused on building clean, responsive and user-friendly applications, while continuously growing in modern web technologies.
 
 ---
 ## Technologies Used
