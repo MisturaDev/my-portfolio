@@ -2,9 +2,11 @@
 
 Welcome to my personal portfolio. This project showcases my frontend and mobile development skills and React projects.
 
+
 ## About Me
 
 Hi, I’m **Mistura Ishola**  a frontend & mobile app developer passionate about building clean, responsive and user-friendly applications.
+
 
 ## Technologies Used
 
@@ -21,19 +23,27 @@ Hi, I’m **Mistura Ishola**  a frontend & mobile app developer passionate about
 
 ## How to Run Locally
 
+1. clone the repository:
 ```bash
 git clone https://github.com/MisturaDev/my-portfolio.git
-```bash
 
+2. Navigate into the project folder:
+```bash
 cd my-portfolio
-``bash
 
+3. Install independencies:
+```bash
 npm install
-```bash
 
+4. run the app:
+```bash
 npm run dev
-```bash
 
 
-##Linkedin
+
+## Developer
+
+**Mistura Ishola**
+
+ [LinkedIn](https://www.linkedin.com/in/mistura-ishola/)
 
