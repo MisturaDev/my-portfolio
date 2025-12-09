@@ -25,9 +25,9 @@ Hi, I’m **Mistura Ishola**  a frontend & mobile app developer passionate about
 
 ## How to Run Locally
 
- 1. clone the repository:
+1. clone the repository:
    ```bash
-     git clone https://github.com/MisturaDev/my-portfolio.git
+   git clone https://github.com/MisturaDev/my-portfolio.git
 
  2. Navigate into the project folder:
     ```bash
