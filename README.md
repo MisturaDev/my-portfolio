@@ -25,27 +25,29 @@ Hi, I’m **Mistura Ishola**  a frontend & mobile app developer passionate about
 
 ## How to Run Locally
 
-   1. clone the repository:
+ 1. clone the repository:
    ```bash
-    git clone https://github.com/MisturaDev/my-portfolio.git
+     git clone https://github.com/MisturaDev/my-portfolio.git
 
-    2. Navigate into the project folder:
+ 2. Navigate into the project folder:
     ```bash
     cd my-portfolio
 
-   3. Install independencies:
+ 3. Install independencies:
    ```bash
     npm install
 
-    4. run the app:
+  4. run the app:
     ```bash
     npm run dev
 
-
 ---
-## Developer
+
+##Developer
 
 **Mistura Ishola**
+
+
 
  [LinkedIn](https://www.linkedin.com/in/mistura-ishola/)
 
