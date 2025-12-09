@@ -5,7 +5,7 @@ Welcome to my personal portfolio. This project showcases my frontend and mobile 
 ---
 ## About Me
 
-Hi, I’m **Mistura Ishola**  a frontend & mobile app developer passionate about building clean, responsive and user-friendly applications.
+Hi, I’m **Mistura Ishola**, I’m a frontend developer focused on building clean, responsive and user-friendly applications, while continuously growing in modern web technologies.
 
 ---
 ## Technologies Used
@@ -13,7 +13,7 @@ Hi, I’m **Mistura Ishola**  a frontend & mobile app developer passionate about
 - React
 - Vite
 - HTML, CSS, JavaScript
-- Responsive design principles
+- Responsive design 
   
 
 ---
@@ -25,7 +25,7 @@ Hi, I’m **Mistura Ishola**  a frontend & mobile app developer passionate about
 
 ## How to Run Locally
 
-1. clone the repository:
+1. Clone the repository:
    ```bash
    git clone https://github.com/MisturaDev/my-portfolio.git
 
@@ -37,7 +37,7 @@ Hi, I’m **Mistura Ishola**  a frontend & mobile app developer passionate about
     ```bash
     npm install
 
-  4. run the app:
+  4. Run the app:
      ```bash
      npm run dev
 
@@ -46,7 +46,6 @@ Hi, I’m **Mistura Ishola**  a frontend & mobile app developer passionate about
 ## Developer
 
 **Mistura Ishola**
-
 
  [LinkedIn](https://www.linkedin.com/in/mistura-ishola/)
 
