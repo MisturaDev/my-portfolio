@@ -43,10 +43,9 @@ Hi, I’m **Mistura Ishola**  a frontend & mobile app developer passionate about
 
 ---
 
-##Developer
+## Developer
 
 **Mistura Ishola**
-
 
 
  [LinkedIn](https://www.linkedin.com/in/mistura-ishola/)
