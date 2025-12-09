@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Prevent navbar from covering section titles */
+section {
+  scroll-margin-top: 120px; 
+  padding-top: 30px; 
+}

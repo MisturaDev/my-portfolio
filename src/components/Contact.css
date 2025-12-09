@@ -1,0 +1,139 @@
+.section__text__p1 {
+  color: #555;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #000;
+}
+
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  margin-bottom: 50px;
+}
+
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-card {
+  background-color: #f5f5f5;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: scale(1.05);
+}
+
+.contact-card h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #000;
+}
+
+
+.contact-card p {
+  font-size: 16px;
+  color: #000;           
+  font-weight: 500;      
+  margin: 5px 0;
+}
+
+
+.contact-card a {
+  color: #0077b6;
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+
+.contact-card .icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+
+.contact-form {
+  background-color: #f5f5f5;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  resize: none;
+}
+
+.contact-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0077b6;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #005f86;
+  transform: scale(1.05);
+}
+
+
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .contact-info {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .contact-card {
+    width: 200px;
+  }
+}
