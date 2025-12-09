@@ -1,6 +1,6 @@
 # My Portfolio
 
-Welcome to my personal portfolio, showcasing my frontend and mobile development skills through React projects.
+Welcome to my personal portfolio showcasing my frontend and mobile development skills through React projects.
 
 ---
 ## About Me
