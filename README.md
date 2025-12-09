@@ -33,7 +33,7 @@ Hi, I’m **Mistura Ishola**, a frontend developer focused on building clean, re
     ```bash
     cd my-portfolio
 
- 3. Install independencies:
+ 3. Install dependencies.:
     ```bash
     npm install
 
