@@ -34,12 +34,12 @@ Hi, I’m **Mistura Ishola**  a frontend & mobile app developer passionate about
     cd my-portfolio
 
  3. Install independencies:
-   ```bash
+    ```bash
     npm install
 
   4. run the app:
-    ```bash
-    npm run dev
+     ```bash
+     npm run dev
 
 ---
 
