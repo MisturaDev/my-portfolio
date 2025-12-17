@@ -4,7 +4,7 @@ import "./Projects.css";
 import citizenshipImg from "../assets/citizenship.jpg";
 import weatherImg from "../assets/weather.jpg";
 import walletImg from "../assets/dashboard.jpg";
-import eshopperImg from "../assets/stylehub.png";
+import eshopperImg from "../assets/home.png";
 import githubIcon from "../assets/github.png";
 import arrowIcon from "../assets/arrow.png";
 
@@ -58,10 +58,10 @@ const Projects = () => {
           <h3>eShopper Website</h3>
           <p>A Lovable.dev prototype of StyleHub, a fashion marketplace where users can register, explore fashion items and sell their own products.</p>
           <div className="project-links">
-            <a href="https://github.com/MisturaDev/outfit-oracle-dash.git" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/MisturaDev/stylehub-app-react.git" target="_blank" rel="noopener noreferrer">
               <img src={githubIcon} alt="GitHub Link" className="icon" />
             </a>
-            <a href="https://outfit-oracle-dash.lovable.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+            <a href="https://stylehub-app-react.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
           </div>
         </div>
       </div>
