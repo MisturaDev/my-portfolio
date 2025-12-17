@@ -1,16 +1,51 @@
-# React + Vite
+# My Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio showcasing my frontend and mobile development skills through React projects.
 
-Currently, two official plugins are available:
+---
+## About Me
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Hi, I’m **Mistura Ishola**, a frontend developer focused on building clean, responsive and user-friendly applications, while continuously growing in modern web technologies.
 
-## React Compiler
+---
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- HTML, CSS, JavaScript
+- Responsive design 
+  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Live Demo:** [View Portfolio](https://my-portfolio-psi-eight-67.vercel.app/)  
+
+
+---
+
+## How to Run Locally
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/MisturaDev/my-portfolio.git
+
+ 2. Navigate into the project folder:
+    ```bash
+    cd my-portfolio
+
+ 3. Install dependencies.:
+    ```bash
+    npm install
+
+  4. Run the app:
+     ```bash
+     npm run dev
+
+---
+
+## Developer
+
+**Mistura Ishola**
+
+ [LinkedIn](https://www.linkedin.com/in/mistura-ishola/)
+
