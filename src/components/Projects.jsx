@@ -56,7 +56,7 @@ const Projects = () => {
         <div className="project-card">
           <img src={eshopperImg} alt="eShopper Website" />
           <h3>eShopper Website</h3>
-          <p>A Lovable.dev prototype of StyleHub, a fashion marketplace where users can register, explore fashion items and sell their own products.</p>
+          <p>StyleHub is a fashion marketplace where users can register, browse products and sell their own fashion items.</p>
           <div className="project-links">
             <a href="https://github.com/MisturaDev/stylehub-app-react.git" target="_blank" rel="noopener noreferrer">
               <img src={githubIcon} alt="GitHub Link" className="icon" />
