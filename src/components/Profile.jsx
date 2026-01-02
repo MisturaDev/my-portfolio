@@ -1,7 +1,7 @@
 import React from "react";
 import "./Profile.css";
 
-import profilePic from "../assets/profile.JPG";
+import profilePic from "../assets/profile.jpeg";
 import resumePDF from "../assets/resume.pdf";
 import linkedinIcon from "../assets/linkedin.png";
 import githubIcon from "../assets/github.png";
