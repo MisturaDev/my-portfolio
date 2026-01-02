@@ -1,7 +1,6 @@
 import React from 'react';
 import './About.css';
 
-
 import experienceIcon from '../assets/experience.png';
 import educationIcon from '../assets/education.png';
 import arrowIcon from '../assets/arrow.png';
@@ -31,7 +30,7 @@ const About = () => {
                 className="icon"
               />
               <h3>Experience</h3>
-              <p>2+ years <br />Frontend & Mobile App Development</p>
+              <p>Frontend & Mobile App Development | 2+ years of coding experience</p>
             </div>
 
             <div className="details-container">
@@ -47,7 +46,9 @@ const About = () => {
 
           <div className="text-container">
             <p>
-              I am a passionate frontend and mobile app developer with experience building responsive web and mobile applications using React, React Native and modern JavaScript tools. I enjoy solving problems, learning new technologies and contributing to impactful projects. My goal is to continue growing as a developer and create high-quality, user-focused digital experiences.
+              I am a passionate frontend and mobile app developer with experience building responsive web and mobile applications using React, React Native and modern JavaScript tools.
+              <br /><br />
+              I enjoy solving problems, learning new technologies and contributing to impactful projects. My goal is to continue growing as a developer and create high-quality, user-focused digital experiences.
             </p>
           </div>
         </div>
