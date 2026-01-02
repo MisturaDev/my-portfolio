@@ -5,7 +5,7 @@ Welcome to my personal portfolio showcasing my frontend and mobile development s
 ---
 ## About Me
 
-Hi, I’m **Mistura Ishola**, a frontend developer focused on building clean, responsive and user-friendly applications, while continuously growing in modern web technologies.
+Hi, I’m **Mistura Ishola**, a frontend developer focused on building clean, responsive and user-friendly applications, while continuously growing in modern technologies.
 
 ---
 ## Technologies Used
