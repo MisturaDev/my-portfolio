@@ -47,7 +47,7 @@ const About = () => {
 
           <div className="text-container">
             <p>
-              I am a passionate frontend and mobile app developer with experience in building responsive web and mobile applications using React, React Native, Cordova and App.js. I enjoy solving problems, learning new technologies and contributing to projects that make a difference. My goal is to continue improving my skills and create high-quality digital experiences.
+              I am a passionate frontend and mobile app developer with experience building responsive web and mobile applications using React, React Native and modern JavaScript tools. I enjoy solving problems, learning new technologies and contributing to impactful projects. My goal is to continue growing as a developer and create high-quality, user-focused digital experiences.
             </p>
           </div>
         </div>
