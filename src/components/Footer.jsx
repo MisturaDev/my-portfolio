@@ -4,7 +4,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer>
-      <p>Copyright © 2025 Mistura Ishola. All Rights Reserved.</p>
+      <p>Copyright © 2026 Mistura Ishola. All Rights Reserved.</p>
     </footer>
   );
 };
