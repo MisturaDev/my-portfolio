@@ -2,6 +2,7 @@ import React from "react";
 import "./Projects.css";
 
 import citizenshipImg from "../assets/citizenship.jpg";
+import saverImg from "../assets/saver.jpeg";
 import weatherImg from "../assets/weather.jpg";
 import walletImg from "../assets/dashboard.jpg";
 import eshopperImg from "../assets/home.png";
@@ -28,15 +29,16 @@ const Projects = () => {
           </div>
         </div>
 
-        {/* Weather App */}
+        {/* Home Saver App */}
         <div className="project-card">
-          <img src={weatherImg} alt="Weather App" />
-          <h3>Weather App</h3>
-          <p>A cross-platform mobile weather application built with React Native and Expo, providing real-time forecasts using OpenWeather API.</p>
+          <img src={saverImg} alt="Home Saver App" />
+          <h3>Home Saver App</h3>
+          <p>A smart home energy monitoring app that visualizes usage, sets limits and sends alerts to help users save energy and reduce costs in real time.</p>
           <div className="project-links">
-            <a href="https://github.com/MisturaDev/react-native-weather-app" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/MisturaDev/bright-home-saver.git" target="_blank" rel="noopener noreferrer">
               <img src={githubIcon} alt="GitHub Link" className="icon" />
             </a>
+            <a href="https://bright-home-saver.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
           </div>
         </div>
 
