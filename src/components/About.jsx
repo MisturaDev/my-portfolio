@@ -30,7 +30,7 @@ const About = () => {
                 className="icon"
               />
               <h3>Experience</h3>
-              <p>Frontend & Mobile App Development | 2+ years of coding experience</p>
+              <p>Frontend & Mobile Development | 2+ years hands-on experience</p>
             </div>
 
             <div className="details-container">
@@ -40,15 +40,18 @@ const About = () => {
                 className="icon"
               />
               <h3>Education</h3>
-              <p>HND Computer Science</p>
+              <p>
+                 HND Computer Science <br />
+                 Advanced Frontend & Mobile App Development Certifications
+              </p>
             </div>
           </div>
 
           <div className="text-container">
             <p>
-              I am a passionate frontend and mobile app developer with experience building responsive web and mobile applications using React, React Native and modern JavaScript tools.
+              Frontend and mobile app developer with experience building responsive web and mobile applications using React, React Native, Node.js and modern web technologies.
               <br /><br />
-              I enjoy solving problems, learning new technologies and contributing to impactful projects. My goal is to continue growing as a developer and create high-quality, user-focused digital experiences.
+              I enjoy solving problems, learning new technologies and contributing to impactful projects. My goal is to continue growing as a full-stack developer and deliver high-quality, user-focused digital experiences.
             </p>
           </div>
         </div>
