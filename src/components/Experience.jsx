@@ -9,6 +9,8 @@ const Experience = () => {
       <h1 className="title">Skills & Experience</h1>
 
       <div className="experience-container">
+
+        {/* Frontend Development */}
         <div className="experience-card">
           <h3>Frontend Development</h3>
           <ul>
@@ -21,7 +23,7 @@ const Experience = () => {
           </ul>
         </div>
 
-        {/* Mobile */}
+        {/* Mobile Development */}
         <div className="experience-card">
           <h3>Mobile Development</h3>
           <ul>
@@ -31,13 +33,14 @@ const Experience = () => {
           </ul>
         </div>
 
-        {/* Backend / Tools */}
+        {/* Backend & Tools */}
         <div className="experience-card">
           <h3>Backend & Tools</h3>
           <ul>
-            <li>WordPress REST API</li>
-            <li>Firebase</li>
+            <li>Node.js</li>
             <li>Supabase</li>
+            <li>Firebase</li>
+            <li>WordPress REST API</li>
           </ul>
         </div>
       </div>
