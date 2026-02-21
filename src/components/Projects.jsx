@@ -5,6 +5,7 @@ import citizenshipImg from "../assets/citizenship.jpg";
 import saverImg from "../assets/saver.jpeg";
 import weatherImg from "../assets/weather.jpg";
 import walletImg from "../assets/dashboard.jpg";
+import LandingImg from "../assets/Landing.png";
 import eshopperImg from "../assets/home.png";
 import githubIcon from "../assets/github.png";
 import arrowIcon from "../assets/arrow.png";
@@ -55,6 +56,20 @@ const Projects = () => {
         </div>
 
         {/* eShopper Website */}
+        <div className="project-card">
+          <img src={eshopperImg} alt="eShopper Website" />
+          <h3>eShopper Website</h3>
+          <p>StyleHub is a fashion marketplace where users can register, browse products and sell their own fashion items.</p>
+          <div className="project-links">
+            <a href="https://github.com/MisturaDev/stylehub-app-react.git" target="_blank" rel="noopener noreferrer">
+              <img src={githubIcon} alt="GitHub Link" className="icon" />
+            </a>
+            <a href="https://stylehub-app-react.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+          </div>
+        </div>
+      
+
+      {/* eShopper Website */}
         <div className="project-card">
           <img src={eshopperImg} alt="eShopper Website" />
           <h3>eShopper Website</h3>
