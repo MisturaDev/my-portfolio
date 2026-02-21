@@ -18,7 +18,7 @@ const Profile = () => {
         <div className="profile-text">
           <p>Hello, I'm</p>
           <h1>Mistura Ishola</h1>
-          <p>Frontend & Mobile App Developer</p>
+          <p>Frontend & Mobile Developer</p>
 
           <div className="btn-container">
             <button
