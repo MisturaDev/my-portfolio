@@ -49,10 +49,10 @@ const About = () => {
 
           <div className="text-container">
             <p>
-              Frontend and mobile app developer with experience building responsive web and mobile applications using React, React Native, Node.js and modern web technologies.
+              Frontend & Mobile Developer delivering real-world applications using React, React Native, Node.js and modern technologies.
               <br /><br />
-              I enjoy solving problems, learning new technologies and contributing to impactful projects. My goal is to continue growing as a full-stack developer and deliver high-quality, user-focused digital experiences.
-            </p>
+            I focus on building scalable, user-focused solutions that solve problems and provide measurable value, creating high-quality digital applications that make an impact. 
+              </p>
           </div>
         </div>
       </div>
