@@ -18,7 +18,7 @@ Hi, I’m **Mistura Ishola**, a frontend developer focused on building clean, re
 
 ---
 
-**Live Demo:** [View Portfolio](https://my-portfolio-psi-eight-67.vercel.app/)  
+**Live Demo:** [View Portfolio](https://mistura-ishola.vercel.app/)  
 
 
 ---
