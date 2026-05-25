@@ -1,69 +1,25 @@
 import React from 'react';
 import './About.css';
 
-import experienceIcon from '../assets/experience.png';
-import educationIcon from '../assets/education.png';
-import arrowIcon from '../assets/arrow.png';
-
 const About = () => {
-  const scrollToExperience = () => {
-    const target = document.getElementById('experience');
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
-    <section id="about">
-      <p className="section__text__p1">Get To Know More</p>
-      <h1 className="title">About Me</h1>
-
-      <div className="section-container">
-
-        {/* About Details */}
-        <div className="about-details-container">
-          <div className="about-containers">
-            <div className="details-container">
-              <img
-                src={experienceIcon}
-                alt="Experience icon"
-                className="icon"
-              />
-              <h3>Experience</h3>
-              <p>Frontend & Mobile Development | 2+ years hands-on experience</p>
-            </div>
-
-            <div className="details-container">
-              <img
-                src={educationIcon}
-                alt="Education icon"
-                className="icon"
-              />
-              <h3>Education</h3>
-              <p>
-                 HND Computer Science <br />
-                 Advanced Frontend & Mobile App Development Certifications
-              </p>
-            </div>
-          </div>
-
-          <div className="text-container">
-            <p>
-              Frontend & Mobile Developer delivering real-world applications using React, React Native, Node.js and modern technologies.
-              <br /><br />
-            I focus on building scalable, user-focused solutions that solve problems and provide measurable value, creating high-quality digital applications that make an impact. 
-              </p>
-          </div>
-        </div>
+    <section id="about" className="about section-shell">
+      <p className="eyebrow">About</p>
+      <h2 className="section-title">Building products that feel reliable, intentional and ready for real users.</h2>
+      <div className="about-copy">
+        <p className="section-lead">
+          I&apos;m a Frontend and Mobile Developer specializing in cross-platform applications for iOS, Android and the web. I focus on solving real user problems through thoughtful engineering, from interface architecture and planning to launch-ready execution.
+        </p>
+        <p className="section-lead">
+          I work extensively with React Native and modern frontend technologies like React and Next.js, building scalable, API-driven applications with clean execution and smooth user experiences.
+        </p>
+        <p className="section-lead">
+          I focus on user-first problem solving, translating product goals into intuitive flows that reduce friction and improve adoption across platforms.
+        </p>
+        <p className="section-lead">
+          I&apos;m constantly learning and improving, staying aligned with modern development practices to build better, faster and more reliable products.
+        </p>
       </div>
-
-      {/* Arrow to Experience Section */}
-      <img
-        src={arrowIcon}
-        alt="Arrow icon"
-        className="icon arrow"
-        onClick={scrollToExperience}
-      />
     </section>
   );
 };
