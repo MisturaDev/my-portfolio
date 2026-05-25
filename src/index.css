@@ -1,11 +1,33 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
+:root {
+  --bg: #f6f8ff;
+  --surface: #ffffff;
+  --surface-soft: #f2f6ff;
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --border: #dce4f2;
+  --accent: #076dd4;
+  --accent-2: #0891b2;
+  --soft-shadow: 0 16px 30px rgba(15, 34, 68, 0.08);
 }
 
-/* Prevent navbar from covering section titles */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Inter", "Helvetica Neue", Arial, sans-serif;
+  color: var(--text-primary);
+  background:
+    radial-gradient(circle at 10% -10%, #dbeaff 0%, transparent 35%),
+    radial-gradient(circle at 95% 5%, #d9f3ff 0%, transparent 28%),
+    var(--bg);
+}
+
 section {
-  scroll-margin-top: 120px; 
-  padding-top: 30px; 
+  scroll-margin-top: 95px;
 }
