@@ -15,7 +15,7 @@ const Footer = () => {
             </p>
 
             <div className="footer-socials" aria-label="Social links">
-              <a href="https://misturaishola.vercel.app" target="_blank" rel="noopener noreferrer" aria-label="Website">
+              <a href="https://mistura-ishola.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Website">
                 <svg viewBox="0 0 24 24" role="presentation">
                   <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.9 9h-3.1a15.6 15.6 0 0 0-1-5A8 8 0 0 1 18.9 11ZM12 4.1c.8 1 1.6 3.1 1.9 5.9h-3.8C10.4 7.2 11.2 5.1 12 4.1ZM5.1 13h3.1c.1 2 .5 3.8 1 5a8 8 0 0 1-4.1-5Zm3.1-2H5.1a8 8 0 0 1 4.1-5c-.5 1.2-.9 3-1 5Zm1.9 2h3.8c-.3 2.8-1.1 4.9-1.9 5.9-.8-1-1.6-3.1-1.9-5.9Zm5.7 0h3.1a8 8 0 0 1-4.1 5c.5-1.2.9-3 1-5Z" />
                 </svg>
