@@ -1,63 +1,52 @@
-import React from "react";
-import "./Profile.css";
+import React from 'react';
+import './Profile.css';
 
-import profilePic from "../assets/profile.jpeg";
-import resumePDF from "../assets/resume.pdf";
-import linkedinIcon from "../assets/linkedin.png";
-import githubIcon from "../assets/github.png";
+import profilePic from '../assets/Prof.jpeg';
+import resumePDF from '../assets/resume.pdf';
+
+const highlights = [
+  { label: 'Cross-platform mobile development' },
+  { label: 'Product-minded frontend engineering' },
+  { label: 'Scalable web and API integration' },
+];
 
 const Profile = () => {
   return (
-    <section id="profile">
-      <div className="profile-container">
-        <div className="profile-pic-container">
-          <img src={profilePic} alt="Mistura Ishola" className="profile-pic" />
-        </div>
+    <section id="profile" className="hero section-shell">
+      <div className="hero-grid">
+        <div className="hero-copy">
+          <p className="eyebrow">Frontend & Mobile Developer</p>
+          <h1>Building digital products that feel refined, fast and production-ready.</h1>
+          <p className="hero-description">
+            Cross-platform developer specializing in web, iOS and Android applications, focused on transforming complex requirements into seamless user experiences with clean execution, intuitive interaction design and interfaces that earn user trust quickly.
+          </p>
 
-        {/* Profile Text */}
-        <div className="profile-text">
-          <p>Hello, I'm</p>
-          <h1>Mistura Ishola</h1>
-          <p>Frontend & Mobile Developer</p>
-
-          <div className="btn-container">
-            <button
-              className="btn btn-primary"
-              onClick={() => window.open(resumePDF)}
-            >
-              Download CV
-            </button>
-
-            <button
-              className="btn btn-secondary"
-              onClick={() =>
-                document.getElementById("contact").scrollIntoView({
-                  behavior: "smooth",
-                })
-              }
-            >
-              Contact Info
-            </button>
+          <div className="hero-actions">
+            <a className="btn btn-solid" href="#projects">View My Work</a>
+            <a className="btn btn-ghost" href={resumePDF} target="_blank" rel="noopener noreferrer">Download Resume</a>
           </div>
 
-          {/* Social Icons */}
-          <div className="social-icons">
-            <img
-              src={linkedinIcon}
-              alt="LinkedIn"
-              className="icon"
-              onClick={() =>
-                window.open("https://www.linkedin.com/in/mistura-ishola")
-              }
-            />
-            <img
-              src={githubIcon}
-              alt="GitHub"
-              className="icon"
-              onClick={() => window.open("https://github.com/MisturaDev")}
-            />
+          <div className="hero-points" role="list" aria-label="Highlights">
+            {highlights.map((item) => (
+              <article key={item.label} role="listitem" className="hero-point">
+                <p>{item.label}</p>
+              </article>
+            ))}
           </div>
         </div>
+
+        <aside className="hero-profile-card" aria-label="Profile summary">
+          <img src={profilePic} alt="Mistura portrait" className="profile-pic" />
+          <div>
+            <h2>Mistura Ishola</h2>
+            <p>Frontend & Mobile Developer</p>
+            <div className="hero-socials">
+              <a href="https://www.linkedin.com/in/mistura-ishola" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://github.com/MisturaDev" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="mailto:misturaaaishola@gmail.com">Email</a>
+            </div>
+          </div>
+        </aside>
       </div>
     </section>
   );
