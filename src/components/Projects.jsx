@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Projects.css';
 
 const getLiveThumbnail = (url) =>
@@ -143,13 +143,36 @@ const projects = [
 ];
 
 const Projects = () => {
+  const [filter, setFilter] = useState('All');
+
+  const filtered = filter === 'All'
+    ? projects
+    : projects.filter((p) =>
+        filter === 'Mobile'
+          ? p.type === 'Mobile Application'
+          : p.type !== 'Mobile Application'
+      );
+
   return (
     <section id="projects" className="section-shell projects">
       <p className="eyebrow">Projects</p>
-      <p className="section-lead">A focused selection of web and mobile applications demonstrating real-world problem-solving, API-driven architecture, and production-ready execution.</p>
+
+      <div className="project-filters" role="tablist" aria-label="Filter projects">
+        {['All', 'Web', 'Mobile'].map((tab) => (
+          <button
+            key={tab}
+            role="tab"
+            aria-selected={filter === tab}
+            className={`filter-tab ${filter === tab ? 'active' : ''}`}
+            onClick={() => setFilter(tab)}
+          >
+            {tab}
+          </button>
+        ))}
+      </div>
 
       <div className="projects-grid" role="list" aria-label="Project list">
-        {projects.map((project) => (
+        {filtered.map((project) => (
           <article key={project.title} className="project-card" role="listitem">
             {(project.demo || project.repo) && (
               <a
