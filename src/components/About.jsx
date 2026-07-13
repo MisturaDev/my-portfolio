@@ -14,7 +14,7 @@ const About = () => {
           My core stack is React Native for mobile and React/Next.js for the web. I build scalable, API-driven applications with clean execution and smooth user experiences.
         </p>
         <p className="section-lead">
-          I care about reducing friction at every layer, from the way a flow is structured to how fast it loads. The goal is always a product that earns user trust quickly.
+          I care about reducing friction at every layer, from intuitive user flows to fast, responsive experiences. My goal is to build products that earn user trust through simplicity, performance and reliability.
         </p>
       </div>
     </section>
