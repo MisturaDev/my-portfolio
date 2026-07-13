@@ -33,7 +33,6 @@ const Skills = () => {
   return (
     <section id="experience" className="section-shell experience">
       <p className="eyebrow">Skills</p>
-      <p className="section-lead skills-intro">These are the technologies and workflows I use in production-focused work.</p>
 
       <div className="track-grid" role="list" aria-label="Experience tracks">
         {tracks.map((track) => (
