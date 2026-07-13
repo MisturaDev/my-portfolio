@@ -11,13 +11,10 @@ const About = () => {
           I&apos;m a Frontend and Mobile Developer specializing in cross-platform applications for iOS, Android and the web. I focus on solving real user problems through thoughtful engineering, from interface architecture and planning to launch-ready execution.
         </p>
         <p className="section-lead">
-          I work extensively with React Native and modern frontend technologies like React and Next.js, building scalable, API-driven applications with clean execution and smooth user experiences.
+          My core stack is React Native for mobile and React/Next.js for the web. I build scalable, API-driven applications with clean execution and smooth user experiences.
         </p>
         <p className="section-lead">
-          I focus on user-first problem solving, translating product goals into intuitive flows that reduce friction and improve adoption across platforms.
-        </p>
-        <p className="section-lead">
-          I&apos;m constantly learning and improving, staying aligned with modern development practices to build better, faster and more reliable products.
+          I care about reducing friction at every layer, from the way a flow is structured to how fast it loads. The goal is always a product that earns user trust quickly.
         </p>
       </div>
     </section>
