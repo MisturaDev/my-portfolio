@@ -91,15 +91,6 @@ const projects = [
     demo: 'https://ai-safe-alert-app.vercel.app/',
   },
   {
-    title: 'React Native & Expo Course',
-    year: '2026',
-    type: 'Course',
-    summary:
-      'A beginner-friendly public course on building a mobile app with React Native and Expo.',
-    stack: ['React Native', 'Expo', 'Teaching'],
-    demo: 'https://distinction.app/public-course/build-a-beginner-friendly-mobile-app-with-react-native-and-expo',
-  },
-  {
     title: 'JobTracker App',
     year: '2026',
     type: 'Web Application',
@@ -108,16 +99,6 @@ const projects = [
     stack: ['React', 'Filtering', 'CRUD flows'],
     repo: 'https://github.com/MisturaDev/Job-Tracker.git',
     demo: 'https://job-tracker-wine-seven.vercel.app/',
-  },
-  {
-    title: 'Home Saver App',
-    year: '2025',
-    type: 'Web Application',
-    summary:
-      'A home energy dashboard that visualizes usage, supports limit controls, and sends proactive savings alerts.',
-    stack: ['React', 'Charts', 'State Management'],
-    repo: 'https://github.com/MisturaDev/bright-home-saver.git',
-    demo: 'https://bright-home-saver.vercel.app/',
   },
   {
     title: 'StyleHub Marketplace',
@@ -130,6 +111,16 @@ const projects = [
     demo: 'https://stylehub-app-react.vercel.app/',
   },
   {
+    title: 'Home Saver App',
+    year: '2025',
+    type: 'Web Application',
+    summary:
+      'A home energy dashboard that visualizes usage, supports limit controls, and sends proactive savings alerts.',
+    stack: ['React', 'Charts', 'State Management'],
+    repo: 'https://github.com/MisturaDev/bright-home-saver.git',
+    demo: 'https://bright-home-saver.vercel.app/',
+  },
+  {
     title: 'Wallet App',
     year: '2025',
     type: 'Mobile Application',
@@ -138,6 +129,15 @@ const projects = [
     stack: ['React Native', 'Expo', 'Firebase'],
     repo: 'https://github.com/MisturaDev/wallet-app-react-native.git',
     thumbnail: 'https://raw.githubusercontent.com/MisturaDev/wallet-app-react-native/main/screenshots/Dashboard.jpg',
+  },
+  {
+    title: 'React Native & Expo Course',
+    year: '2026',
+    type: 'Course',
+    summary:
+      'A beginner-friendly public course on building a mobile app with React Native and Expo.',
+    stack: ['React Native', 'Expo', 'Teaching'],
+    demo: 'https://distinction.app/public-course/build-a-beginner-friendly-mobile-app-with-react-native-and-expo',
   },
 ];
 
