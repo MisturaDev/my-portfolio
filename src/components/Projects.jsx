@@ -128,7 +128,6 @@ const projects = [
     stack: ['React', 'Routing', 'Product UI', 'Supabase'],
     repo: 'https://github.com/MisturaDev/stylehub-app-react.git',
     demo: 'https://stylehub-app-react.vercel.app/',
-    thumbnail: '/stylehub-logo.svg',
   },
   {
     title: 'Wallet App',
