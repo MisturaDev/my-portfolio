@@ -17,7 +17,7 @@ const tracks = [
   },
   {
     title: 'Mobile Development',
-    stack: ['React Native', 'Expo', 'Ionic', 'Cordova'],
+    stack: ['React Native', 'Expo'],
   },
   {
     title: 'Backend & Integrations',
