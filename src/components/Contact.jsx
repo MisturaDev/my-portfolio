@@ -12,9 +12,9 @@ const Contact = () => {
         <div className="contact-panel contact-form-panel">
           <div className="panel-head">
             <h3>Contact Form</h3>
-            <p className="form-intro-title">Let&apos;s build something great together.</p>
+            <p className="form-intro-title">Got a project or opportunity? Let&apos;s talk.</p>
             <p className="form-intro-text">
-              Send me a direct message for collaborations, freelance work, or full-time opportunities.
+              Send me a direct message for collaborations, freelance work or full-time opportunities.
             </p>
           </div>
 
@@ -30,7 +30,7 @@ const Contact = () => {
               id="message"
               name="message"
               rows="5"
-              placeholder="Tell me about your project, timeline, or opportunity..."
+              placeholder="Tell me about your project, timeline or opportunity..."
               required
             />
 
@@ -56,8 +56,7 @@ const Contact = () => {
             <h3>Contact Details</h3>
             <p>
               <span className="details-lead">Open to serious conversations and good product work.</span>
-              If you are hiring, planning a redesign, or need a frontend engineer who cares about product quality,
-              <span className="details-tail">this is the fastest way to reach me.</span>
+              If you&apos;re hiring or planning a project, this is the fastest way to reach me.
             </p>
           </div>
 

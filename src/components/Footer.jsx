@@ -60,7 +60,7 @@ const Footer = () => {
 
             <div className="footer-focus">
               <h4>Current Focus</h4>
-              <p>Frontend and mobile opportunities in product-driven teams focused on high-quality implementation.</p>
+              <p>Open to frontend and mobile roles in product-driven teams.</p>
             </div>
           </div>
         </div>
