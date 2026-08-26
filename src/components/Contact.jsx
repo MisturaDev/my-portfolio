@@ -86,17 +86,7 @@ const Contact = () => {
               <a className="detail-link" href="mailto:misturaaaishola@gmail.com">misturaaaishola@gmail.com</a>
             </article>
 
-            <article className="detail-item" role="listitem">
-              <div className="detail-head">
-                <span className="detail-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" role="presentation">
-                    <path d="M6.6 10.8a15.3 15.3 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1 .33 2 .5 3.1.5a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.2 21 3 13.8 3 4.9a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.1.2 2.1.5 3.1a1 1 0 0 1-.25 1l-2.15 1.8Z" />
-                  </svg>
-                </span>
-                <p className="detail-label">Phone</p>
-              </div>
-              <a className="detail-link" href="tel:+2348081202521">+234 808 120 2521</a>
-            </article>
+
           </div>
         </aside>
       </div>
