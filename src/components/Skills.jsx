@@ -5,19 +5,25 @@ const tracks = [
   {
     title: 'Frontend Development',
     stack: [
-      'HTML',
-      'CSS',
       'React.js',
       'Next.js',
       'TypeScript',
-      'Angular',
-      'Tailwind CSS',
       'JavaScript (ES6+)',
+      'Tailwind CSS',
+      'Redux',
     ],
   },
   {
     title: 'Mobile Development',
-    stack: ['React Native', 'Expo'],
+    stack: [
+      'React Native',
+      'Expo',
+      'iOS Development',
+      'Android Development',
+      'Mobile UI/UX',
+      'App Performance',
+      'Native Modules',
+    ],
   },
   {
     title: 'Backend & Integrations',
@@ -99,6 +105,10 @@ const Skills = () => {
             <div className="mobile-chip">
               <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React Native" loading="lazy" />
               <span>React Native</span>
+            </div>
+            <div className="mobile-chip">
+              <img src="https://cdn.simpleicons.org/expo/000000" alt="Expo" loading="lazy" />
+              <span>Expo</span>
             </div>
             <div className="mobile-chip">
               <img src="https://cdn.simpleicons.org/apple/111111" alt="iOS" loading="lazy" />
