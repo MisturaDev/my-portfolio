@@ -27,7 +27,14 @@ const tracks = [
   },
   {
     title: 'Backend & Integrations',
-    stack: ['Node.js', 'Supabase', 'Firebase', 'REST APIs', 'WordPress API'],
+    stack: [
+      'Node.js',
+      'Supabase',
+      'Firebase',
+      'PostgreSQL',
+      'REST APIs',
+      'WordPress API',
+    ],
   },
   {
     title: 'Tools & Technologies',
@@ -142,8 +149,8 @@ const Skills = () => {
               <span>Supabase</span>
             </div>
             <div className="mobile-chip">
-              <img src="https://cdn.simpleicons.org/mysql/4479A1" alt="SQL Database" loading="lazy" />
-              <span>SQL Database</span>
+              <img src="https://cdn.simpleicons.org/postgresql/4169E1" alt="PostgreSQL" loading="lazy" />
+              <span>PostgreSQL</span>
             </div>
             <div className="mobile-chip">
               <img src="https://cdn.simpleicons.org/postman/FF6C37" alt="REST APIs" loading="lazy" />
