@@ -17,12 +17,12 @@ const tracks = [
     title: 'Mobile Development',
     stack: [
       'React Native',
-      'Expo',
       'iOS Development',
       'Android Development',
-      'Mobile UI/UX',
-      'App Performance',
+      'Expo',
       'Native Modules',
+      'App Performance',
+      'Mobile UI/UX',
     ],
   },
   {
