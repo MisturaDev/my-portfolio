@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const navItems = [
@@ -23,10 +24,9 @@ const Navbar = () => {
   return (
     <header className="site-header">
       <nav className="navbar" aria-label="Main navigation">
-        <button
-          type="button"
+        <Link
+          to="/"
           className="logo"
-          onClick={() => handleNavigate('profile')}
           aria-label="Mistura home"
         >
           <span className="logo-mark">M</span>
@@ -35,7 +35,7 @@ const Navbar = () => {
             Mistura
             <span className="logo-bracket">/&gt;</span>
           </span>
-        </button>
+        </Link>
 
         <button
           type="button"
