@@ -12,7 +12,7 @@ const LandingPage = () => {
           <p className="landing-subtitle">Frontend & Mobile Developer</p>
           
           <p className="landing-description">
-            Building high-fidelity digital products for iOS, Android, and the Web. Focused on clean engineering, smooth interactions, and user-centered design.
+            Building digital products for iOS, Android, and the Web. Focused on clean engineering, smooth interactions, and user-centered design.
           </p>
           
           <div className="landing-actions">
@@ -31,8 +31,8 @@ const LandingPage = () => {
               <span className="metric-label">Shipped</span>
             </div>
             <div className="metric-item">
-              <span className="metric-num">4+</span>
-              <span className="metric-label">Mobile Apps</span>
+              <span className="metric-num">Live</span>
+              <span className="metric-label">App &amp; Play Store</span>
             </div>
             <div className="metric-item">
               <span className="metric-num">100%</span>
