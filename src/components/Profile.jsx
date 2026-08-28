@@ -23,7 +23,7 @@ const Profile = () => {
 
           <div className="hero-actions">
             <a className="btn btn-solid" href="#projects">View My Work</a>
-            <a className="btn btn-ghost" href={resumePDF} target="_blank" rel="noopener noreferrer">Download Resume</a>
+            <a className="btn btn-ghost" href={resumePDF} target="_blank" rel="noopener noreferrer">View Resume</a>
           </div>
 
           <div className="hero-points" role="list" aria-label="Highlights">

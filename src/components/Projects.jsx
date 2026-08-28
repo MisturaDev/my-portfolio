@@ -39,10 +39,40 @@ const projects = [
     type: 'Mobile Application',
     summary:
       'A modern PropTech (Property Technology) mobile ecosystem designed to seamlessly connect people, properties, opportunities, and engaging lifestyle experiences.',
-    stack: ['React Native', 'Expo', 'TypeScript', 'PropTech Features', 'Meme Sharing'],
-    demo: 'https://nobzoent.com/',
+    stack: ['React Native', 'Expo', 'TypeScript', 'Socket.io', 'PropTech Features', 'Meme Sharing'],
     appStore: 'https://apps.apple.com/ng/app/nobzo/id6499149704',
     playStore: 'https://play.google.com/store/apps/details?id=com.nobzo.mobile',
+    screenshots: [
+      '/nobzo-1.jpeg',
+      '/nobzo-2.jpeg',
+      '/nobzo-3.jpeg',
+      '/nobzo-4.png',
+    ],
+  },
+  {
+    title: 'Nobzo Admin & Operations Hub',
+    year: '2026',
+    type: 'Web Application',
+    summary:
+      'A modular, feature-rich back-office administration platform designed for rental management (units & tenants), featuring real-time chat, legal case tracking, compliance management, and interactive data visualization.',
+    stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Zustand', 'Recharts'],
+    thumbnail: '/nobzo-dashboard.png',
+  },
+  {
+    title: 'eMigr8 Visa Companion',
+    year: '2026',
+    type: 'Mobile Application',
+    summary:
+      'A mobile companion application designed to streamline global tech talent visa planning (UK, US, Canada, France) with personalized roadmaps, task tracking, and expert coaching integration.',
+    stack: ['React Native', 'Expo', 'TypeScript', 'Firebase'],
+    appStore: 'https://apps.apple.com/ng/app/emigr8-visa-companion/id6791632754',
+    playStore: 'https://play.google.com/store/apps/details?id=com.eMigr8.companion',
+    thumbnail: 'https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/60/61/b3/6061b30f-8f71-62b9-8095-f0e3a156a3ca/AppIcon-0-0-1x_U007epad-0-1-85-220.png/1200x630wa.png',
+    screenshots: [
+      '/emigr8-1.jpeg',
+      '/emigr8-2.jpeg',
+      '/emigr8-3.jpeg',
+    ],
   },
   {
     title: 'SabiGuy',
@@ -53,11 +83,19 @@ const projects = [
     stack: [
       'React Native',
       'Expo',
-      'TypeScript',
-      'Zustand',
-      'API Integration',
+      'Socket.io',
+      'Paystack',
     ],
     demo: 'https://www.sabiguy.com/',
+    inDevelopment: true,
+    screenshots: [
+      '/sabi-1.jpeg',
+      '/sabi-2.jpeg',
+      '/sabi-3.jpeg',
+      '/sabi-4.jpeg',
+      '/sabi-5.jpeg',
+      '/sabi-6.jpeg',
+    ],
   },
   {
     title: 'EduLive Analytics Dashboard',
@@ -112,6 +150,14 @@ const projects = [
       'A cross-platform wallet experience built with React Native and Expo, with Firebase sync for user data.',
     stack: ['React Native', 'Expo', 'Firebase'],
     thumbnail: 'https://raw.githubusercontent.com/MisturaDev/wallet-app-react-native/main/screenshots/Dashboard.jpg',
+    screenshots: [
+      'https://raw.githubusercontent.com/MisturaDev/wallet-app-react-native/main/screenshots/Dashboard.jpg',
+      '/AddMoney.jpeg',
+      '/SendMoney.jpeg',
+      '/Airtime.jpg',
+      '/PayBills.jpg',
+      '/TransactionHistory.jpg',
+    ],
   },
   {
     title: 'React Native & Expo Course',
@@ -126,6 +172,8 @@ const projects = [
 
 const Projects = () => {
   const [filter, setFilter] = useState('All');
+  const [selectedProject, setSelectedProject] = useState(null);
+  const [activeImageIndex, setActiveImageIndex] = useState(0);
 
   const filtered = filter === 'All'
     ? projects
@@ -154,69 +202,160 @@ const Projects = () => {
       </div>
 
       <div className="projects-grid" role="list" aria-label="Project list">
-        {filtered.map((project) => (
-          <article key={project.title} className="project-card" role="listitem">
-            {(project.demo || project.appStore) && (
-              <a
-                className="project-thumb-link"
-                href={project.demo || project.appStore}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`Visit live project: ${project.title}`}
+        {filtered.map((project) => {
+          const isMobileApp = project.type === 'Mobile Application';
+          return (
+            <article
+              key={project.title}
+              className="project-card"
+              role="listitem"
+              onMouseMove={(e) => {
+                const rect = e.currentTarget.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                e.currentTarget.style.setProperty('--mouse-x', `${x}px`);
+                e.currentTarget.style.setProperty('--mouse-y', `${y}px`);
+              }}
+            >
+              {project.screenshots && project.screenshots.length > 0 ? (
+                <button
+                  type="button"
+                  className={`project-thumb-link project-thumb-btn ${isMobileApp ? 'mobile-mockup-card' : ''}`}
+                  onClick={() => {
+                    setSelectedProject(project);
+                    setActiveImageIndex(0);
+                  }}
+                  aria-label={`View screenshots for ${project.title}`}
+                >
+                  {isMobileApp && <div className="mockup-notch"></div>}
+                  <img
+                    className="project-thumb"
+                    src={project.thumbnail || project.screenshots[0]}
+                    alt={`${project.title} preview`}
+                    loading="lazy"
+                  />
+                </button>
+              ) : (
+                <>
+                  {(project.demo || project.appStore) && (
+                    <a
+                      className={`project-thumb-link ${isMobileApp ? 'mobile-mockup-card' : ''}`}
+                      href={project.demo || project.appStore}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`Visit live project: ${project.title}`}
+                    >
+                      {isMobileApp && <div className="mockup-notch"></div>}
+                      <img
+                        className="project-thumb"
+                        src={getPrimaryThumbnail(project)}
+                        alt={`${project.title} preview`}
+                        loading="lazy"
+                      />
+                    </a>
+                  )}
+                  {!(project.demo || project.appStore) && project.thumbnail && (
+                    <div className={`project-thumb-link ${isMobileApp ? 'mobile-mockup-card' : ''}`}>
+                      {isMobileApp && <div className="mockup-notch"></div>}
+                      <img
+                        className="project-thumb"
+                        src={project.thumbnail}
+                        alt={`${project.title} preview`}
+                        loading="lazy"
+                      />
+                    </div>
+                  )}
+                </>
+              )}
+              <div className="project-meta">
+                <p className="live-pill">{project.type}</p>
+                <span>{project.year}</span>
+              </div>
+              <h3>{project.title}</h3>
+              <p className="project-summary">{project.summary}</p>
+              <div className="stack-row">
+                {project.stack.map((item) => (
+                  <span key={item}>{item}</span>
+                ))}
+              </div>
+              <div className="project-links">
+                {project.inDevelopment ? (
+                  <span className="in-development">In Development</span>
+                ) : (
+                  <>
+                    {project.demo && !project.appStore && !project.playStore && (
+                      <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                        {project.type === 'Mobile Application' 
+                          ? 'Visit App' 
+                          : project.type === 'Course' 
+                            ? 'Visit Course' 
+                            : 'Visit Project'}
+                      </a>
+                    )}
+                    {project.appStore && (
+                      <a href={project.appStore} target="_blank" rel="noopener noreferrer">
+                        App Store
+                      </a>
+                    )}
+                    {project.playStore && (
+                      <a href={project.playStore} target="_blank" rel="noopener noreferrer">
+                        Play Store
+                      </a>
+                    )}
+                  </>
+                )}
+              </div>
+            </article>
+          );
+        })}
+      </div>
+
+      {selectedProject && (
+        <div className="project-modal-overlay" onClick={() => setSelectedProject(null)}>
+          <div className="project-modal-content" onClick={(e) => e.stopPropagation()}>
+            <button
+              className="modal-close"
+              onClick={() => setSelectedProject(null)}
+              aria-label="Close modal"
+            >
+              &times;
+            </button>
+            
+            <div className="modal-slider">
+              <button
+                type="button"
+                className="modal-arrow prev"
+                onClick={() => setActiveImageIndex((prev) => (prev === 0 ? selectedProject.screenshots.length - 1 : prev - 1))}
               >
+                &#10094;
+              </button>
+              
+              <div className="modal-image-container">
                 <img
-                  className="project-thumb"
-                  src={getPrimaryThumbnail(project)}
-                  alt={`${project.title} preview`}
-                  loading="lazy"
-                />
-              </a>
-            )}
-            {!(project.demo || project.appStore) && project.thumbnail && (
-              <div className="project-thumb-link">
-                <img
-                  className="project-thumb"
-                  src={project.thumbnail}
-                  alt={`${project.title} preview`}
-                  loading="lazy"
+                  src={selectedProject.screenshots[activeImageIndex]}
+                  alt={`${selectedProject.title} screenshot ${activeImageIndex + 1}`}
+                  className="modal-image"
                 />
               </div>
-            )}
-            <div className="project-meta">
-              <p className="live-pill">{project.type}</p>
-              <span>{project.year}</span>
+              
+              <button
+                type="button"
+                className="modal-arrow next"
+                onClick={() => setActiveImageIndex((prev) => (prev === selectedProject.screenshots.length - 1 ? 0 : prev + 1))}
+              >
+                &#10095;
+              </button>
             </div>
-            <h3>{project.title}</h3>
-            <p className="project-summary">{project.summary}</p>
-            <div className="stack-row">
-              {project.stack.map((item) => (
-                <span key={item}>{item}</span>
-              ))}
+            
+            <div className="modal-info">
+              <h3>{selectedProject.title} Preview</h3>
+              <p className="modal-counter">
+                Screenshot {activeImageIndex + 1} of {selectedProject.screenshots.length}
+              </p>
             </div>
-            <div className="project-links">
-              {project.demo && !project.appStore && !project.playStore && (
-                <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                  {project.type === 'Mobile Application' 
-                    ? 'Visit App' 
-                    : project.type === 'Course' 
-                      ? 'Visit Course' 
-                      : 'Visit Project'}
-                </a>
-              )}
-              {project.appStore && (
-                <a href={project.appStore} target="_blank" rel="noopener noreferrer">
-                  App Store
-                </a>
-              )}
-              {project.playStore && (
-                <a href={project.playStore} target="_blank" rel="noopener noreferrer">
-                  Play Store
-                </a>
-              )}
-            </div>
-          </article>
-        ))}
-      </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
