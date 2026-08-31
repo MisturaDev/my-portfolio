@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { createPortal } from 'react-dom';
 import './Projects.css';
 
 const getLiveThumbnail = (url) =>
@@ -67,11 +68,34 @@ const projects = [
     stack: ['React Native', 'Expo', 'TypeScript', 'Firebase'],
     appStore: 'https://apps.apple.com/ng/app/emigr8-visa-companion/id6791632754',
     playStore: 'https://play.google.com/store/apps/details?id=com.eMigr8.companion',
-    thumbnail: 'https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/60/61/b3/6061b30f-8f71-62b9-8095-f0e3a156a3ca/AppIcon-0-0-1x_U007epad-0-1-85-220.png/1200x630wa.png',
     screenshots: [
       '/emigr8-1.jpeg',
       '/emigr8-2.jpeg',
       '/emigr8-3.jpeg',
+    ],
+  },
+  {
+    title: 'eMigr8 AI Product Tools',
+    year: '2026',
+    type: 'Backend & Integration',
+    summary:
+      'A suite of AI-powered tools designed to support startup ideation, career development, visa business planning, interview preparation, and personalized recommendations. Contributed to API integration, Cloud Function integration, eMigr8 Gateway authentication, brand system implementation, testing, and deployment.',
+    stack: ['React', 'Gemini API', 'Google Cloud Functions', 'Firebase', 'eMigr8 Gateway'],
+    subProducts: [
+      'Startup Idea Generator',
+      'Aspirational CV Generator',
+      'UK Innovator Founder Visa Business Plan Generator',
+      'Innovator Founder Endorsement Interview Prep',
+      'Recommendation Engine',
+    ],
+    screenshots: [
+      '/Regen.png',
+      '/visa1.png',
+      '/visagen.png',
+      '/IdeaGen.jpeg',
+      '/cvgen.png',
+      '/Innogen.png',
+      '/gateway.png',
     ],
   },
   {
@@ -95,6 +119,23 @@ const projects = [
       '/sabi-4.jpeg',
       '/sabi-5.jpeg',
       '/sabi-6.jpeg',
+    ],
+  },
+  {
+    title: 'Auvra',
+    year: '2026',
+    type: 'Mobile Application',
+    summary:
+      'A mobile platform designed to help individuals, families, and communities securely preserve, own, and pass down their cultural heritage, featuring Lens AI transcription, verified record badges, a private vault, and integrated wallet payments.',
+    stack: ['React Native', 'Expo', 'TypeScript', 'Redux'],
+    inDevelopment: true,
+    screenshots: [
+      '/A-1.jpeg',
+      '/A-2.jpeg',
+      '/A-3.jpeg',
+      '/A-4.jpeg',
+      '/A-5.jpeg',
+      '/A-6.jpeg',
     ],
   },
   {
@@ -273,6 +314,13 @@ const Projects = () => {
               </div>
               <h3>{project.title}</h3>
               <p className="project-summary">{project.summary}</p>
+              {project.subProducts && (
+                <ul className="sub-products-list">
+                  {project.subProducts.map((sub) => (
+                    <li key={sub}>{sub}</li>
+                  ))}
+                </ul>
+              )}
               <div className="stack-row">
                 {project.stack.map((item) => (
                   <span key={item}>{item}</span>
@@ -310,7 +358,7 @@ const Projects = () => {
         })}
       </div>
 
-      {selectedProject && (
+      {selectedProject && createPortal(
         <div className="project-modal-overlay" onClick={() => setSelectedProject(null)}>
           <div className="project-modal-content" onClick={(e) => e.stopPropagation()}>
             <button
@@ -354,7 +402,8 @@ const Projects = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </section>
   );
