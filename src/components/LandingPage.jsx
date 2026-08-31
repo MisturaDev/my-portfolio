@@ -5,16 +5,26 @@ import './LandingPage.css';
 const LandingPage = () => {
   return (
     <div className="landing-container">
+      <header className="landing-header">
+        <div className="logo">
+          <span className="logo-mark">M</span>
+          <span className="logo-text">
+            <span className="logo-bracket">&lt;</span>
+            Mistura
+            <span className="logo-bracket">/&gt;</span>
+          </span>
+        </div>
+      </header>
       <main className="landing-grid">
         {/* Left Column: Welcome, Bio, Stats */}
         <section className="landing-left-column">
           <h1 className="landing-name">Mistura Ishola</h1>
           <p className="landing-subtitle">Frontend & Mobile Developer</p>
-          
+
           <p className="landing-description">
-            Building digital products for iOS, Android, and the Web. Focused on clean engineering, smooth interactions, and user-centered design.
+            Building digital products for iOS, Android and the Web. Focused on clean engineering, smooth interactions, and user-centered design.
           </p>
-          
+
           <div className="landing-actions">
             <Link to="/portfolio" className="landing-btn">
               Enter Portfolio
