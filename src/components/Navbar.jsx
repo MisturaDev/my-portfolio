@@ -57,15 +57,6 @@ const Navbar = () => {
               </button>
             </li>
           ))}
-          <li>
-            <button
-              type="button"
-              className="hire-btn"
-              onClick={() => handleNavigate('contact')}
-            >
-              Hire Me
-            </button>
-          </li>
         </ul>
       </nav>
     </header>
