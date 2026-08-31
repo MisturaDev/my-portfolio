@@ -39,7 +39,7 @@ const projects = [
     year: '2026',
     type: 'Mobile Application',
     summary:
-      'A modern PropTech (Property Technology) mobile ecosystem designed to seamlessly connect people, properties, opportunities, and engaging lifestyle experiences.',
+      'A PropTech mobile application connecting property owners and tenants, featuring real-time landlord-tenant chat, property listings, rent tracking, and lifestyle experience sharing.',
     stack: ['React Native', 'Expo', 'TypeScript', 'Socket.io', 'PropTech Features', 'Meme Sharing'],
     appStore: 'https://apps.apple.com/ng/app/nobzo/id6499149704',
     playStore: 'https://play.google.com/store/apps/details?id=com.nobzo.mobile',
@@ -51,20 +51,23 @@ const projects = [
     ],
   },
   {
-    title: 'Nobzo Admin & Operations Hub',
+    title: 'Nobzo Operations',
     year: '2026',
     type: 'Web Application',
     summary:
-      'A modular, feature-rich back-office administration platform designed for rental management (units & tenants), featuring real-time chat, legal case tracking, compliance management, and interactive data visualization.',
+      'A modular enterprise operations platform designed for rental management (units & tenants), featuring real-time chat, legal case tracking, compliance management, and interactive data visualization.',
     stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Zustand', 'Recharts'],
     thumbnail: '/nobzo-dashboard.png',
+    screenshots: [
+      '/nobzo-dashboard.png',
+    ],
   },
   {
     title: 'eMigr8 Visa Companion',
     year: '2026',
     type: 'Mobile Application',
     summary:
-      'A mobile companion application designed to streamline global tech talent visa planning (UK, US, Canada, France) with personalized roadmaps, task tracking, and expert coaching integration.',
+      'The mobile companion app for the eMigr8 tech visa ecosystem, live on the App Store and Google Play. Guides users through onboarding, personalized roadmaps, milestone task tracking, coaching, partner services, and subscription billing.',
     stack: ['React Native', 'Expo', 'TypeScript', 'Firebase'],
     appStore: 'https://apps.apple.com/ng/app/emigr8-visa-companion/id6791632754',
     playStore: 'https://play.google.com/store/apps/details?id=com.eMigr8.companion',
