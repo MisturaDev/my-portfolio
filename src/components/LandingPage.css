@@ -411,6 +411,46 @@
   }
 }
 
+/* Staggered load animations */
+.landing-header,
+.landing-name,
+.landing-subtitle,
+.landing-description,
+.landing-actions,
+.landing-metrics,
+.landing-right-column {
+  opacity: 0;
+  animation: landingFadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.landing-header {
+  animation-delay: 0.1s;
+}
+
+.landing-name {
+  animation-delay: 0.25s;
+}
+
+.landing-subtitle {
+  animation-delay: 0.4s;
+}
+
+.landing-description {
+  animation-delay: 0.55s;
+}
+
+.landing-actions {
+  animation-delay: 0.7s;
+}
+
+.landing-metrics {
+  animation-delay: 0.85s;
+}
+
+.landing-right-column {
+  animation-delay: 1s;
+}
+
 /* Responsive Scaling Rules */
 @media (max-width: 900px) {
   .landing-grid {
