@@ -18,7 +18,9 @@ const Profile = () => {
           <p className="eyebrow">Frontend & Mobile Developer</p>
           <h1>Building digital products that feel refined, fast and production-ready.</h1>
           <p className="hero-description">
-            Cross-platform developer specializing in iOS, Android and Web applications, focused on clean execution, intuitive interaction design, and high-performance user experiences.
+            Cross-platform developer specializing in iOS, Android, and Web applications,{' '}
+            <br className="hero-desc-br" />
+            focused on clean execution, intuitive design and seamless user experiences.
           </p>
 
           <div className="hero-actions">

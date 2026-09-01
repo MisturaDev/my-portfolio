@@ -28,8 +28,12 @@
 .hero-description {
   margin: 0;
   color: var(--text-secondary);
-  max-width: 62ch;
+  max-width: none;
   line-height: 1.7;
+}
+
+.hero-desc-br {
+  display: block;
 }
 
 .hero-actions {
@@ -150,5 +154,9 @@
 
   .hero-points {
     grid-template-columns: 1fr;
+  }
+
+  .hero-desc-br {
+    display: none;
   }
 }
