@@ -55,7 +55,7 @@ const projects = [
     year: '2026',
     type: 'Web Application',
     summary:
-      'A modular enterprise operations platform designed for rental management (units & tenants), featuring real-time chat, legal case tracking, compliance management, and interactive data visualization.',
+      'An enterprise operations dashboard built with Next.js, designed to streamline regional real estate operations, property management (units and tenants), and legal compliance escalations. Features real-time state synchronization, complex form validation, and interactive data visualization.',
     stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Zustand', 'Recharts'],
     thumbnail: '/nobzo-dashboard.png',
     screenshots: [
@@ -222,10 +222,10 @@ const Projects = () => {
   const filtered = filter === 'All'
     ? projects
     : projects.filter((p) =>
-        filter === 'Mobile'
-          ? p.type === 'Mobile Application'
-          : p.type !== 'Mobile Application'
-      );
+      filter === 'Mobile'
+        ? p.type === 'Mobile Application'
+        : p.type !== 'Mobile Application'
+    );
 
   return (
     <section id="projects" className="section-shell projects">
@@ -336,10 +336,10 @@ const Projects = () => {
                   <>
                     {project.demo && !project.appStore && !project.playStore && (
                       <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                        {project.type === 'Mobile Application' 
-                          ? 'Visit App' 
-                          : project.type === 'Course' 
-                            ? 'Visit Course' 
+                        {project.type === 'Mobile Application'
+                          ? 'Visit App'
+                          : project.type === 'Course'
+                            ? 'Visit Course'
                             : 'Visit Project'}
                       </a>
                     )}
@@ -371,7 +371,7 @@ const Projects = () => {
             >
               &times;
             </button>
-            
+
             <div className="modal-slider">
               <button
                 type="button"
@@ -380,7 +380,7 @@ const Projects = () => {
               >
                 &#10094;
               </button>
-              
+
               <div className="modal-image-container">
                 <img
                   src={selectedProject.screenshots[activeImageIndex]}
@@ -388,7 +388,7 @@ const Projects = () => {
                   className="modal-image"
                 />
               </div>
-              
+
               <button
                 type="button"
                 className="modal-arrow next"
@@ -397,7 +397,7 @@ const Projects = () => {
                 &#10095;
               </button>
             </div>
-            
+
             <div className="modal-info">
               <h3>{selectedProject.title} Preview</h3>
               <p className="modal-counter">
