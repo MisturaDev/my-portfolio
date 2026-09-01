@@ -14,7 +14,7 @@ const About = () => {
           My primary stack centers on React Native &amp; Expo for mobile and Next.js/React for the web. Beyond crafting clean, responsive interfaces, I bridge frontend engineering with backend API integrations to deliver seamless, end-to-end user experiences.
         </p>
         <p className="section-lead">
-          I care deeply about reducing friction at every layer from intuitive user flows to writing clean, maintainable code. My goal is always to deliver software that earns user trust through speed, stability, and thoughtful design.
+          I care deeply about reducing friction at every layer, from intuitive user flows to writing clean, maintainable code. My goal is always to deliver software that earns user trust through speed, stability, and thoughtful design.
         </p>
       </div>
     </section>
