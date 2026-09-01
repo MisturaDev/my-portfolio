@@ -22,7 +22,7 @@ const LandingPage = () => {
           <p className="landing-subtitle">Frontend & Mobile Developer</p>
 
           <p className="landing-description">
-            Building digital products for iOS, Android and the Web. Focused on clean engineering, smooth interactions, and user-centered design.
+            Building digital products for iOS, Android and the Web. Focused on clean engineering, smooth interactions and intuitive design.
           </p>
 
           <div className="landing-actions">
