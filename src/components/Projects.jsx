@@ -39,8 +39,8 @@ const projects = [
     year: '2026',
     type: 'Mobile Application',
     summary:
-      'A PropTech mobile application connecting property owners and tenants, featuring real-time landlord-tenant chat, property listings, rent tracking, and lifestyle experience sharing.',
-    stack: ['React Native', 'Expo', 'TypeScript', 'Socket.io', 'PropTech Features', 'Meme Sharing'],
+      'A PropTech mobile application connecting property owners and tenants, featuring real-time landlord-tenant chat, verified property listings, automated rent tracking, community lifestyle sharing, and secure Paystack payment flows.',
+    stack: ['React Native', 'Expo', 'TypeScript', 'Paystack'],
     appStore: 'https://apps.apple.com/ng/app/nobzo/id6499149704',
     playStore: 'https://play.google.com/store/apps/details?id=com.nobzo.mobile',
     screenshots: [
@@ -56,7 +56,7 @@ const projects = [
     type: 'Web Application',
     summary:
       'A modern PropTech platform engineered to eliminate trust barriers in high-value real estate transactions. Showcases an integrated ecosystem uniting verified listings, off-market concierge sourcing, and institutional escrow protections. Features interactive multi-pillar product showcases, visual milestone escrow walkthroughs, tactile micro-interactions, and ultra-smooth responsive performance.',
-    stack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+    stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
     demo: 'https://nobzoent.com/',
   },
   {
@@ -64,7 +64,7 @@ const projects = [
     year: '2026',
     type: 'Mobile Application',
     summary:
-      'A mobile service marketplace connecting customers with local service providers, featuring interactive booking flows, real-time chat, and integrated secure wallet payments.',
+      'A mobile service marketplace connecting users and service providers, featuring real-time chat, interactive service booking flows, and secure Paystack-powered wallet transactions.',
     stack: [
       'React Native',
       'Expo',
@@ -102,7 +102,7 @@ const projects = [
     type: 'Backend & Integration',
     summary:
       'A suite of AI-powered tools designed to support startup ideation, career development, visa business planning, interview preparation, and personalized recommendations. Contributed to API integration, Cloud Function integration, eMigr8 Gateway authentication, brand system implementation, testing, and deployment.',
-    stack: ['React', 'Gemini API', 'Google Cloud Functions', 'Firebase', 'eMigr8 Gateway'],
+    stack: ['React', 'Gemini API', 'Cloud Functions', 'Firebase'],
     subProducts: [
       'Startup Idea Generator',
       'Aspirational CV Generator',
@@ -142,8 +142,8 @@ const projects = [
     year: '2026',
     type: 'Web Application',
     summary:
-      'An analytics dashboard for tracking educational insights, performance metrics, and engagement trends in one interface.',
-    stack: ['React', 'Dashboard UI', 'Data Visualization'],
+      'A responsive EdTech analytics dashboard designed to monitor student engagement trends, course completion metrics, and instructor performance in real time.',
+    stack: ['React', 'TypeScript', 'Tailwind CSS', 'Recharts'],
     demo: 'https://edulive-analytics-dashboard.vercel.app/',
   },
   {
@@ -151,8 +151,8 @@ const projects = [
     year: '2026',
     type: 'Web Application',
     summary:
-      'A safety-focused web application that helps users trigger emergency alerts quickly, with AI-assisted safety guidance and faster access to help.',
-    stack: ['React', 'Alerts', 'Firebase'],
+      'An emergency response web application engineered for rapid distress alerting. Features instant one-tap emergency triggers, intelligent AI safety guidance, and automated alert broadcasts.',
+    stack: ['React', 'TypeScript', 'AI Assistant', 'Alert System'],
     demo: 'https://ai-safe-alert-app.vercel.app/',
   },
   {
@@ -160,8 +160,8 @@ const projects = [
     year: '2026',
     type: 'Web Application',
     summary:
-      'A workflow tool for organizing job applications with progress visibility and status-based tracking.',
-    stack: ['React', 'Filtering', 'CRUD flows'],
+      'A productivity web application for organizing job applications with multi-stage pipeline tracking, status filtering, interview notes, and responsive search.',
+    stack: ['React', 'TypeScript', 'Tailwind CSS', 'CRUD'],
     demo: 'https://job-tracker-wine-seven.vercel.app/',
   },
   {
@@ -169,8 +169,8 @@ const projects = [
     year: '2025',
     type: 'Web Application',
     summary:
-      'A fashion marketplace where users can register, browse listings, and publish products in a seller flow.',
-    stack: ['React', 'Routing', 'Product UI', 'Supabase'],
+      'A modern fashion marketplace enabling independent sellers to publish curated apparel collections and buyers to discover unique products. Features category-based filtering, seller publishing workflows, and Supabase-backed authentication with real-time data persistence.',
+    stack: ['React', 'TypeScript', 'Supabase', 'Tailwind CSS'],
     demo: 'https://stylehub-app-react.vercel.app/',
   },
   {
@@ -178,8 +178,8 @@ const projects = [
     year: '2025',
     type: 'Web Application',
     summary:
-      'A home energy dashboard that visualizes usage, supports limit controls, and sends proactive savings alerts.',
-    stack: ['React', 'Charts', 'State Management'],
+      'A smart home energy PWA designed to help households track, analyze, and optimize electricity consumption. Features real-time appliance usage breakdowns, custom budget threshold controls, interactive telemetry charts, and proactive energy-saving alerts.',
+    stack: ['React', 'TypeScript', 'Supabase', 'PWA', 'Charts'],
     demo: 'https://bright-home-saver.vercel.app/',
   },
   {
@@ -187,8 +187,8 @@ const projects = [
     year: '2025',
     type: 'Mobile Application',
     summary:
-      'A cross-platform wallet experience built with React Native and Expo, with Firebase sync for user data.',
-    stack: ['React Native', 'Expo', 'Firebase'],
+      'A cross-platform digital wallet mobile application supporting money transfers, airtime purchases, bill payments, and real-time Firebase synchronization.',
+    stack: ['React Native', 'Expo', 'TypeScript', 'Firebase'],
     thumbnail: 'https://raw.githubusercontent.com/MisturaDev/wallet-app-react-native/main/screenshots/Dashboard.jpg',
     screenshots: [
       'https://raw.githubusercontent.com/MisturaDev/wallet-app-react-native/main/screenshots/Dashboard.jpg',
@@ -204,8 +204,8 @@ const projects = [
     year: '2026',
     type: 'Course',
     summary:
-      'A beginner-friendly public course on building a mobile app with React Native and Expo.',
-    stack: ['React Native', 'Expo', 'Teaching'],
+      'A hands-on public course guiding developers through core mobile fundamentals, UI layout, and cross-platform app deployment with React Native and Expo.',
+    stack: ['React Native', 'Expo', 'Mobile Dev', 'Mentorship'],
     demo: 'https://distinction.app/public-course/build-a-beginner-friendly-mobile-app-with-react-native-and-expo',
   },
 ];
@@ -332,11 +332,15 @@ const Projects = () => {
                   <>
                     {project.demo && !project.appStore && !project.playStore && (
                       <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                        {project.type === 'Mobile Application'
-                          ? 'Visit App'
-                          : project.type === 'Course'
-                            ? 'Visit Course'
-                            : 'Visit Project'}
+                        {project.linkText || (
+                          project.type === 'Mobile Application'
+                            ? 'Visit App'
+                            : project.type === 'Course'
+                              ? 'Visit Course'
+                              : project.title.toLowerCase().includes('website')
+                                ? 'Visit Website'
+                                : 'Visit Project'
+                        )}
                       </a>
                     )}
                     {project.appStore && (
