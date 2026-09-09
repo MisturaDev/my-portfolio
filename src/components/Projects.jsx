@@ -113,8 +113,7 @@ const projects = [
       'Socket.io',
       'Paystack',
     ],
-    demo: 'https://www.sabiguy.com/',
-    inDevelopment: true,
+    playStore: 'https://play.google.com/store/apps/details?id=com.sabiguy.mobile',
     screenshots: [
       '/sabi-1.jpeg',
       '/sabi-2.jpeg',
