@@ -35,7 +35,7 @@ const getPrimaryThumbnail = (project) => {
 
 const projects = [
   {
-    title: 'Nobzo',
+    title: 'NOBZO',
     year: '2026',
     type: 'Mobile Application',
     summary:
@@ -51,15 +51,34 @@ const projects = [
     ],
   },
   {
-    title: 'Nobzo Operations',
+    title: 'NOBZO Website',
     year: '2026',
     type: 'Web Application',
     summary:
-      'An enterprise operations dashboard built with Next.js, designed to streamline regional real estate operations, property management (units and tenants), and legal compliance escalations. Features real-time state synchronization, complex form validation, and interactive data visualization.',
-    stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Zustand', 'Recharts'],
-    thumbnail: '/nobzo-dashboard.png',
+      'A modern PropTech platform engineered to eliminate trust barriers in high-value real estate transactions. Showcases an integrated ecosystem uniting verified listings, off-market concierge sourcing, and institutional escrow protections. Features interactive multi-pillar product showcases, visual milestone escrow walkthroughs, tactile micro-interactions, and ultra-smooth responsive performance.',
+    stack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+    demo: 'https://nobzoent.com/',
+  },
+  {
+    title: 'SabiGuy',
+    year: '2026',
+    type: 'Mobile Application',
+    summary:
+      'A mobile service marketplace connecting customers with local service providers, featuring interactive booking flows, real-time chat, and integrated secure wallet payments.',
+    stack: [
+      'React Native',
+      'Expo',
+      'Socket.io',
+      'Paystack',
+    ],
+    playStore: 'https://play.google.com/store/apps/details?id=com.sabiguy.mobile',
     screenshots: [
-      '/nobzo-dashboard.png',
+      '/sabi-1.jpeg',
+      '/sabi-2.jpeg',
+      '/sabi-3.jpeg',
+      '/sabi-4.jpeg',
+      '/sabi-5.jpeg',
+      '/sabi-6.jpeg',
     ],
   },
   {
@@ -99,28 +118,6 @@ const projects = [
       '/cvgen.png',
       '/Innogen.png',
       '/gateway.png',
-    ],
-  },
-  {
-    title: 'SabiGuy',
-    year: '2026',
-    type: 'Mobile Application',
-    summary:
-      'A mobile service marketplace connecting customers with local service providers, featuring interactive booking flows, real-time chat, and integrated secure wallet payments.',
-    stack: [
-      'React Native',
-      'Expo',
-      'Socket.io',
-      'Paystack',
-    ],
-    playStore: 'https://play.google.com/store/apps/details?id=com.sabiguy.mobile',
-    screenshots: [
-      '/sabi-1.jpeg',
-      '/sabi-2.jpeg',
-      '/sabi-3.jpeg',
-      '/sabi-4.jpeg',
-      '/sabi-5.jpeg',
-      '/sabi-6.jpeg',
     ],
   },
   {
@@ -316,10 +313,10 @@ const Projects = () => {
               </div>
               <h3>{project.title}</h3>
               <p className="project-summary">{project.summary}</p>
-              {project.subProducts && (
+              {(project.subProducts || project.highlights) && (
                 <ul className="sub-products-list">
-                  {project.subProducts.map((sub) => (
-                    <li key={sub}>{sub}</li>
+                  {(project.subProducts || project.highlights).map((item) => (
+                    <li key={item}>{item}</li>
                   ))}
                 </ul>
               )}

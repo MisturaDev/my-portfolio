@@ -348,20 +348,20 @@
 }
 
 .badge-1 {
-  top: 5px;
-  right: 40px;
+  top: -12px;
+  right: 35px;
   animation: badgeFloat1 5s ease-in-out infinite;
 }
 
 .badge-2 {
-  bottom: 110px;
-  left: 5px;
+  bottom: 140px;
+  left: -2px;
   animation: badgeFloat2 5s ease-in-out infinite 1s;
 }
 
 .badge-3 {
-  bottom: 15px;
-  right: 190px;
+  bottom: 30px;
+  right: 135px;
   animation: badgeFloat3 5s ease-in-out infinite 2s;
 }
 
@@ -496,9 +496,9 @@
     border-width: 5px;
   }
   
-  .badge-1 { right: 20px; }
-  .badge-2 { left: -10px; }
-  .badge-3 { right: 150px; }
+  .badge-1 { top: -10px; right: 25px; }
+  .badge-2 { bottom: 115px; left: -2px; }
+  .badge-3 { bottom: 20px; right: 110px; }
 }
 
 @media (max-width: 480px) {
@@ -527,7 +527,7 @@
     border-width: 4px;
   }
   
-  .badge-1 { right: 10px; }
-  .badge-2 { left: -5px; }
-  .badge-3 { right: 110px; }
+  .badge-1 { top: -8px; right: 15px; }
+  .badge-2 { bottom: 95px; left: 0px; }
+  .badge-3 { bottom: 15px; right: 85px; }
 }

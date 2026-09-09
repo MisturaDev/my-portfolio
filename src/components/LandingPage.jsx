@@ -62,12 +62,12 @@ const LandingPage = () => {
                   <span className="dot yellow"></span>
                   <span className="dot green"></span>
                 </div>
-                <div className="browser-address">nobzo-admin.dev</div>
+                <div className="browser-address">nobzoent.com</div>
               </div>
               <div className="browser-mockup-body">
                 <img
-                  src="/nobzo-dashboard.png"
-                  alt="Nobzo Admin Dashboard Preview"
+                  src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fnobzoent.com%2F?w=1200"
+                  alt="NOBZO Website Preview"
                   className="mockup-img"
                   loading="lazy"
                 />
@@ -88,9 +88,9 @@ const LandingPage = () => {
             </div>
 
             {/* Floating Tech Badges */}
-            <div className="tech-badge badge-1">React Native</div>
+            <div className="tech-badge badge-1">TypeScript</div>
             <div className="tech-badge badge-2">Next.js</div>
-            <div className="tech-badge badge-3">TypeScript</div>
+            <div className="tech-badge badge-3">React Native</div>
           </div>
         </section>
       </main>
