@@ -480,54 +480,133 @@
   }
   
   .landing-right-column {
-    height: 360px;
-    max-width: 420px;
+    height: 350px;
+    max-width: 400px;
     margin: 0 auto;
+  }
+
+  .mockup-scene {
+    max-width: 380px;
+    height: 330px;
   }
   
   .browser-frame-wrapper {
-    width: 320px;
-    height: 210px;
+    top: 10px;
+    left: 8px;
+    width: 300px;
+    height: 195px;
   }
   
   .phone-frame-wrapper {
-    width: 125px;
-    height: 240px;
+    bottom: 8px;
+    right: 12px;
+    width: 120px;
+    height: 230px;
     border-width: 5px;
   }
+
+  .tech-badge {
+    padding: 0.38rem 0.7rem;
+    font-size: 0.72rem;
+  }
   
-  .badge-1 { top: -10px; right: 25px; }
-  .badge-2 { bottom: 115px; left: -2px; }
-  .badge-3 { bottom: 20px; right: 110px; }
+  .badge-1 { top: -8px; right: 70px; }
+  .badge-2 { bottom: 120px; left: 12px; }
+  .badge-3 { bottom: 25px; right: 105px; }
 }
 
 @media (max-width: 480px) {
+  .landing-container {
+    padding: 1.5rem 1rem 3rem;
+  }
+
+  .landing-grid {
+    gap: 2.5rem;
+    padding: 2.5rem 0.5rem 1rem;
+  }
+
   .landing-header {
-    padding: 0 1.25rem;
-    height: 70px;
+    padding: 0 1rem;
+    height: 64px;
   }
 
   .landing-metrics {
-    gap: 1.5rem;
+    gap: 1.25rem;
+    padding-top: 1.8rem;
+    margin-top: 2.2rem;
   }
   
   .metric-num {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+  }
+
+  .metric-label {
+    font-size: 0.72rem;
+  }
+  
+  .landing-right-column {
+    height: 300px;
+    max-width: 330px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .mockup-scene {
+    max-width: 320px;
+    height: 280px;
   }
   
   .browser-frame-wrapper {
-    width: 270px;
-    height: 180px;
+    top: 8px;
+    left: 4px;
+    width: 245px;
+    height: 160px;
   }
   
   .phone-frame-wrapper {
-    width: 110px;
-    height: 210px;
-    right: 5px;
+    bottom: 6px;
+    right: 6px;
+    width: 102px;
+    height: 195px;
     border-width: 4px;
   }
   
-  .badge-1 { top: -8px; right: 15px; }
-  .badge-2 { bottom: 95px; left: 0px; }
-  .badge-3 { bottom: 15px; right: 85px; }
+  .tech-badge {
+    padding: 0.32rem 0.62rem;
+    font-size: 0.68rem;
+  }
+  
+  .badge-1 { top: -6px; right: 65px; }
+  .badge-2 { bottom: 105px; left: 10px; }
+  .badge-3 { bottom: 18px; right: 80px; }
+}
+
+@media (max-width: 360px) {
+  .landing-right-column {
+    height: 270px;
+    max-width: 295px;
+  }
+
+  .mockup-scene {
+    max-width: 290px;
+    height: 250px;
+  }
+
+  .browser-frame-wrapper {
+    width: 220px;
+    height: 145px;
+    top: 6px;
+    left: 2px;
+  }
+
+  .phone-frame-wrapper {
+    width: 92px;
+    height: 175px;
+    bottom: 4px;
+    right: 4px;
+  }
+
+  .badge-1 { top: -6px; right: 55px; }
+  .badge-2 { bottom: 92px; left: 8px; }
+  .badge-3 { bottom: 14px; right: 72px; }
 }
