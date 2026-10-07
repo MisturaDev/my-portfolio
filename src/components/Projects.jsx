@@ -391,7 +391,7 @@ const Projects = () => {
               <div className="modal-image-container">
                 <img
                   src={selectedProject.screenshots[activeImageIndex]}
-                  alt={`${selectedProject.title} screenshot ${activeImageIndex + 1}`}
+                  alt={`${selectedProject.title} preview ${activeImageIndex + 1}`}
                   className="modal-image"
                 />
               </div>
@@ -406,9 +406,9 @@ const Projects = () => {
             </div>
 
             <div className="modal-info">
-              <h3>{selectedProject.title} Preview</h3>
+              <h3>{selectedProject.title}</h3>
               <p className="modal-counter">
-                Screenshot {activeImageIndex + 1} of {selectedProject.screenshots.length}
+                Preview {activeImageIndex + 1} of {selectedProject.screenshots.length}
               </p>
             </div>
           </div>
