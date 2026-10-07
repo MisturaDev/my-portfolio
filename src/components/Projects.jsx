@@ -48,6 +48,8 @@ const projects = [
       '/nobzo-2.jpeg',
       '/nobzo-3.jpeg',
       '/nobzo-4.png',
+      '/nobzo-5.jpeg',
+      '/nobzo-6.jpeg',
     ],
   },
   {
@@ -111,10 +113,10 @@ const projects = [
       'Recommendation Engine',
     ],
     screenshots: [
+      '/startgen.png',
       '/Regen.png',
       '/visa1.png',
       '/visagen.png',
-      '/IdeaGen.jpeg',
       '/cvgen.png',
       '/Innogen.png',
       '/gateway.png',
