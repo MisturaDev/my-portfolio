@@ -125,9 +125,8 @@ const projects = [
     year: '2026',
     type: 'Mobile Application',
     summary:
-      'A mobile platform designed to help individuals, families, and communities securely preserve, own, and pass down their cultural heritage, featuring Lens AI transcription, verified record badges, a private vault, and integrated wallet payments.',
+      'Contributed to the development of a cross-platform mobile application designed to securely preserve cultural heritage, built with React Native and Expo. Worked on the onboarding experience and private vault functionality, alongside features including Lens AI transcription flows, verified record badges, and wallet payments.',
     stack: ['React Native', 'Expo', 'TypeScript', 'Redux'],
-    inDevelopment: true,
     screenshots: [
       '/A-1.jpeg',
       '/A-2.jpeg',
@@ -326,34 +325,40 @@ const Projects = () => {
                 ))}
               </div>
               <div className="project-links">
-                {project.inDevelopment ? (
-                  <span className="in-development">In Development</span>
-                ) : (
-                  <>
-                    {project.demo && !project.appStore && !project.playStore && (
-                      <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                        {project.linkText || (
-                          project.type === 'Mobile Application'
-                            ? 'Visit App'
-                            : project.type === 'Course'
-                              ? 'Visit Course'
-                              : project.title.toLowerCase().includes('website')
-                                ? 'Visit Website'
-                                : 'Visit Project'
-                        )}
-                      </a>
+                {project.demo && !project.appStore && !project.playStore && (
+                  <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                    {project.linkText || (
+                      project.type === 'Mobile Application'
+                        ? 'Visit App'
+                        : project.type === 'Course'
+                          ? 'Visit Course'
+                          : project.title.toLowerCase().includes('website')
+                            ? 'Visit Website'
+                            : 'Visit Project'
                     )}
-                    {project.appStore && (
-                      <a href={project.appStore} target="_blank" rel="noopener noreferrer">
-                        App Store
-                      </a>
-                    )}
-                    {project.playStore && (
-                      <a href={project.playStore} target="_blank" rel="noopener noreferrer">
-                        Play Store
-                      </a>
-                    )}
-                  </>
+                  </a>
+                )}
+                {project.appStore && (
+                  <a href={project.appStore} target="_blank" rel="noopener noreferrer">
+                    App Store
+                  </a>
+                )}
+                {project.playStore && (
+                  <a href={project.playStore} target="_blank" rel="noopener noreferrer">
+                    Play Store
+                  </a>
+                )}
+                {!project.appStore && !project.playStore && !project.demo && project.screenshots && project.screenshots.length > 0 && (
+                  <button
+                    type="button"
+                    className="view-screens-btn"
+                    onClick={() => {
+                      setSelectedProject(project);
+                      setActiveImageIndex(0);
+                    }}
+                  >
+                    View Screens
+                  </button>
                 )}
               </div>
             </article>

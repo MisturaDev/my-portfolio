@@ -208,20 +208,28 @@
   gap: 0.6rem;
 }
 
-.project-links a {
+.project-links a,
+.project-links button {
   text-decoration: none;
   font-size: 0.84rem;
   font-weight: 700;
   color: var(--accent);
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
   transition: color 180ms ease, opacity 180ms ease;
 }
 
-.project-links a:hover {
+.project-links a:hover,
+.project-links button:hover {
   color: #1d4ed8;
   opacity: 0.95;
 }
 
-.project-links a:last-child {
+.project-links a:last-child,
+.project-links button:last-child {
   margin-left: auto;
 }
 
